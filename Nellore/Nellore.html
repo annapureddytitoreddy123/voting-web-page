@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nellore</title>
+    
+<style>
+    body{
+        background-image: linear-gradient(to right, rgb(194, 242, 175),yellow);
+    }
+    .i{
+    display:inline-block;
+}
+.favicon{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    padding-left: 200px;
+}
+.cointain{
+    padding-top: 100px;
+}
+img{
+    padding-left: 20px;
+
+}
+.img1{
+    padding-left: 100px;
+    width:400px;
+    height: 400px;
+}
+
+.img2{
+    width:400px;
+    height: 400px;
+}
+.img3{
+    width:400px;
+    height: 400px;
+}
+h2{
+    font-size: 40px;
+    color: red;
+    text-align: center;
+}
+h3{
+    padding-left: 20px;
+    text-align: center;
+    font-size: 30px;
+
+}
+button{
+    align-items: center;
+    margin-left: 200px;
+    padding:20px 20px 20px 20px;
+    color: white;
+    border-radius: 10%;
+    background-color: blue;
+
+}
+
+</style>
+</head>
+<body>
+    <h2>Please vote for the MP by clicking on vote button below the representative photo</h2>
+    <div class="cointain">
+    <div class="i">
+    
+    <img class='img1' src="kishore.jpeg" alt="kishore">
+    <br>
+    <img class="favicon" src="bike.png" alt="">
+
+    <h3>G. Venkata Kishore</h3>
+    <h3>LOKNADH PARTY</h3>
+
+    <button class="mp1">VOTE</button>
+    </div>
+    <div class="i">
+    <img class='img2' src="beeda.jpg" alt="beeda">
+    <br>
+    <img class="favicon" src="kite.png" alt="">
+    <h3>Beeda Rammohan</h3>
+    <H3>TDP PARTY</H3>
+    <button class="mp2">VOTE</button>
+    </div>
+    <div class="i">
+    <img class='img3' src="rajamohan.jpeg" alt="rajamohan">
+    <br>
+    <img class="favicon" src="fan.png" alt="">
+    <h3>Rajamohan Reddy</h3>
+    <H3>YCP PARTY</H3>
+    <button class="mp3">VOTE</button>
+    </div>
+    </div>
+    <script>
+        let mp1=document.querySelector(".mp1");
+        let var1=0
+        mp1.addEventListener("click",function (){
+            var1=var1+1
+            console.log("mp1=",var1);
+        })
+        let mp2=document.querySelector(".mp2");
+        let var2=0
+        mp2.addEventListener("click",function (){
+            var2=var2+1
+            console.log("mp2=",var2)
+        })
+        let mp3=document.querySelector(".mp3");
+        let var3=0
+        mp3.addEventListener("click",function (){
+            var3=var3+1
+            console.log("mp3=",var3)
+        })
+    </script>
+</body>
+</html>
